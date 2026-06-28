@@ -1,0 +1,24 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<script> 
+
+window.addEventListener('message', (event) => { 
+
+   if (!event.data || event.data.type !== 'iframeMessage') return 
+
+  const redirectURL = event.data.value 
+
+  console.log('Received:', redirectURL) 
+
+  window.location.href = redirectURL 
+
+}) 
+
+</script>
+<script async data-page-id="bc4c9f87-2b37-41be-9a88-7b383d31b144" type="text/javascript" src="https://caslorenzom.caspio.app/apppage/deploy"></script>
+</body>
+</html>
